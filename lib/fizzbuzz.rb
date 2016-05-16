@@ -1,21 +1,21 @@
 def fizzbuzz(number)
-	if number % 3 == 0
-		if number % 5 == 0
-			return 'fizzbuzz'
+  return "Fail! Not an integer" if /[^-0-9]/.match(number.to_s)
+  return "Integer outside of range. Try again!" if !(1..100).include? number
+
+  if number % 3 == 0
+    if number % 5 == 0
+			puts 'fizzbuzz'
+      return 'fizzbuzz'
 		else
-			return 'fizz'
+			puts 'fizz'
+      return 'fizz'
 		end
 	elsif number % 5 == 0
-		return 'buzz'
+		puts 'buzz'
+    return 'buzz'
 	else
-		return number.to_s
+		puts number.to_s
+    return number.to_s
 	end
-
-
-	# return 'fizzbuzz' if number % 5 == 0 && number % 3 == 0 && number % 15 == 0
-	# return 'fizz' if number % 3 == 0
-	# return 'buzz' if number % 5 == 0
-	# return number.to_s if number != 3 && number != 5
-
 end
 
