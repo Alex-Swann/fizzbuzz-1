@@ -32,7 +32,7 @@ DEPENDENCIES
   sinatra (~> 1.4.5)
 
 RUBY VERSION
-   ruby 2.2.1p85
+   ruby 2.2.2
 
 BUNDLED WITH
    1.12.4
