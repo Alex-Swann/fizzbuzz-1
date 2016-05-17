@@ -2,7 +2,7 @@
 module FizzBuzzApp
     def self.fizzbuzz(number)
       puts "Please input number!"
-      return "Fail! Not an integer" if /[^-0-9]/.match(number.to_s)
+      return "Fail! Not an integer" if !(number.is_a? Integer)
       number = number.to_i
       return "Integer outside of range. Try again!" if !(1..100).include? number
 
@@ -11,14 +11,12 @@ module FizzBuzzApp
           'fizzbuzz'
     		else
           'fizz'
-    		end
+        end
     	elsif number % 5 == 0
         'buzz'
     	else
         number.to_s
-    	end
+      end
     end
 end
-
-
 
