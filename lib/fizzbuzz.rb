@@ -26,10 +26,10 @@ module FizzBuzzApp
 			# Depending on the result, update the search keyword
 			# because the default 'fizz'/'buzz' comes up with rubbish gifs
 			case result
-			when 'fizz' then tag = 'bubbly'
-			when 'buzz' then tag = 'bee'
-			when 'fizzbuzz' then tag = 'soda'
-			else tag = 'nope'
+				when 'fizz' then tag = 'bubbly'
+				when 'buzz' then tag = 'bee'
+				when 'fizzbuzz' then tag = 'soda'
+				else tag = 'nope'
 			end
 
 			# Read data from Giphy API
