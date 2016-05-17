@@ -3,7 +3,6 @@ require 'bundler/setup'
 require 'sinatra'
 
 class FizzBuzzApp < Sinatra::Base
-  get '/' do
     def fizzbuzz(number)
       exit if number.downcase == "end"
       return puts "Fail! Not an integer" if /[^-0-9]/.match(number.to_s)
