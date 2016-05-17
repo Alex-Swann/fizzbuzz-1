@@ -1,3 +1,0 @@
-require './fizzbuzz'
-
-run FizzBuzzApp

@@ -1,10 +1,7 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'sinatra'
 
-class FizzBuzzApp < Sinatra::Base
+module FizzBuzzApp
     def self.fizzbuzz(number)
-      exit if number.downcase == "end"
+      puts "Please input number!"
       return puts "Fail! Not an integer" if /[^-0-9]/.match(number.to_s)
       number = number.to_i
       return puts "Integer outside of range. Try again!" if !(1..100).include? number
@@ -24,12 +21,6 @@ class FizzBuzzApp < Sinatra::Base
     		puts number.to_s
         return number.to_s
     	end
-    end
-    while true
-      puts "Please input number or 'end' to quit!"
-      input = gets.chomp
-      fizzbuzz(input)
-      puts
     end
 end
 
