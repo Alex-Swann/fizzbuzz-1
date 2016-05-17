@@ -1,7 +1,6 @@
 
 module FizzBuzzApp
     def self.fizzbuzz(number)
-      puts "Please input number!"
       return "Fail! Not an integer" if !(number.is_a? Integer)
       number = number.to_i
       return "Integer outside of range. Try again!" if !(1..100).include? number
