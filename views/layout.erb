@@ -6,11 +6,49 @@
   </head>
   <body>
 
-  <select name=”clr” onchange=”document.bgColor=this.options[this.selectedIndex].value” size=”1″><br > <option value=”black”>black <option value=”orange”>orange <option value=”flamingred”>fuschia <option value=”lightyellow”>light yellow <option value=”green”>green <option value=”cyan”>cyan <option value=”yellow”>yellow <option value=”red”>red <option value=”white”>white</option></select>&nbsp;&nbsp;Background Color
 
-  <br ><select name=”clr” onchange=”document.fgColor=this.options[this.selectedIndex].value” size=”1″><br > <option value=”black”>black <option value=”orange”>orange <option value=”flamingred”>fuschia <option value=”lightyellow”>light yellow <option value=”cyan”>cyan <option value=”yellow”>yellow <option value=”red”>red <option value=”white”>white</option></select>&nbsp;&nbsp;Text Color
   	
-    <h1>FizzBuzz App</h1>
+<h1><span class="blink_text">FizzBuzz App</span></h1>
+<style type="text/css">
+.blink_text {
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+ animation-name: blinker;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+ color: red;
+}
+
+@-moz-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+
+@-webkit-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+
+@keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+ </style>
+
+ 
     <%= yield %>
   </body>
 </html>
