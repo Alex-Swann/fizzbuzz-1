@@ -26,10 +26,10 @@ module FizzBuzzApp
 		# This will also require 'uri' so we don't need to require it separately:
 		require 'net/http'
 
-		# JSON is a data format (JavaScript Object Notation).
-		# It looks/works v. similar to a Ruby hash.
-		# It also needs a special library to be imported so
-		# that we can 'read' the format:
+		# API calls (as far as I know) return strings written in JSON.
+		# JSON is a data format (JavaScript Object Notation) which looks/works v.
+		# similarly to a Ruby hash. It also needs a special library to be imported so
+		# that we can 'read' the format as a Ruby hash:
 		require 'json'
 
 		# Depending on the result, update the search keyword
@@ -53,9 +53,8 @@ module FizzBuzzApp
 		# that when we have our own key:
 		giphy_api_key = 'dc6zaTOxFJmzC'
 
-		# The HTTP library needs to be passed in a URI (Uniform Resource Identifier)
-		# rather than a URL (Uniform Resource Locator).
-		# URLs are just a subset of URIs anyway.
+		# The HTTP class needs to be passed in a URI (Uniform Resource Identifier)
+		# rather than a URL (Uniform Resource Locator). URLs are just a subset of URIs anyway.
 		giphy_uri = URI("http://api.giphy.com/v1/gifs/search?q=#{tag}&api_key=#{giphy_api_key}")
 
 		# Create a new HTTP instance, using the URI as an argument:
@@ -67,7 +66,7 @@ module FizzBuzzApp
 		data = JSON.parse(response)["data"]
 
 		# Pick a random gif from the list of returned gifs. The data is structured as
-		# an array of hashes. Check this if you want to see it:
+		# an array of hashes. Check this if you want to see it in action:
 		# http://api.giphy.com/v1/gifs/search?q=test&api_key=dc6zaTOxFJmzC
 		# Each hash holds the info for a different gif.
 		# Here, we're picking a hash within the array at a randomly generated index:
