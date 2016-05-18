@@ -11,4 +11,4 @@
 1. Make a note of the port (it should tell you in your terminal when you start the server "`port=####`"). Do not quit terminal or close rackup.
 1. Go to [http://localhost:####](http://localhost:####), replacing the #### with your port number.
 
-The magical colab between [Alex](https://github.com/Alex-Swann), [Elena](https://github.com/Elena-vi), [Dan](https://github.com/danielschambers) and others.
+> The magical colab between [Alex](https://github.com/Alex-Swann), [Elena](https://github.com/Elena-vi), [Dan](https://github.com/danielschambers) and others.
