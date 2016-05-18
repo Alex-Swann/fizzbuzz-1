@@ -24,5 +24,6 @@ post '/result' do
   # then they will be available everywhere, including inside our views
   @fizzbuzz = params[:number_input]
   @result = FizzBuzzApp.fizzbuzz @fizzbuzz
+	@giphy = FizzBuzzApp.giphy @result
   erb :result
 end

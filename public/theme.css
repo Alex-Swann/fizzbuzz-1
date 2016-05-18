@@ -1,5 +1,51 @@
 body {
-    background-color: lightblue;
-    text-align: center;
+  background-color: lightblue;
+  text-align: center;
+  background-image: url("http://2.bp.blogspot.com/-b3UJc1zyiko/ViZiRwCwnPI/AAAAAAAAD-k/Vk6zwCXzc3o/s1600/FizzBuzz%2BSolution%2Bin%2BJava.jpg");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 
+img {
+  display: block;
+  margin: 2rem auto;
+}
+
+.blink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  color: red;
+}
+
+@-moz-keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
