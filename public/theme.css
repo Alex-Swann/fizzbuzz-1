@@ -12,6 +12,11 @@ img {
   margin: 2rem auto;
 }
 
+form {
+  display: block;
+  margin: 2rem auto;
+}
+
 .blink {
   -webkit-animation-name: blinker;
   -webkit-animation-duration: 3s;
