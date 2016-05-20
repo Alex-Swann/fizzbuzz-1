@@ -8,9 +8,8 @@ require File.dirname(__FILE__)+'/lib/fizzbuzz'
 # By default, it will also look for a file views/layout.erb, which it
 # will render content into.
 
-get '/' do
-  erb :home # tells Sinatra to render views/home_page.erb
-  haml :index
+get '/' do # tells Sinatra to render views/home_page.erb
+  erb :home
 end
 
 # PARAMS:
@@ -27,7 +26,6 @@ post '/result' do
   @result = FizzBuzzApp.fizzbuzz @fizzbuzz
 	@giphy = FizzBuzzApp.giphy @result
   erb :result
-  haml :fizzbuzz, :locals => {:fzbz => array}
 end
 
 get '/style.css' do
