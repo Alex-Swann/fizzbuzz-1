@@ -14,8 +14,7 @@ img {
 
 input {
   margin: 2rem auto;
-  width: 3rem;
-  height: 3rem;
+  width: auto;
 }
 
 .blink {
