@@ -13,8 +13,8 @@ img {
 }
 
 input {
-  display: block;
   margin: 2rem auto;
+  size: 3rem;
 }
 
 .blink {
