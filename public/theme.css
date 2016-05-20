@@ -28,7 +28,7 @@ img {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
-  color: red;
+  color: #5ac7ff;
 }
 
 @-moz-keyframes blinker {
