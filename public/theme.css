@@ -16,6 +16,7 @@ input {
   margin: 2rem auto;
   width: 10%;
   height: 3%;
+  font-size: 2rem;
 }
 
 .blink {
