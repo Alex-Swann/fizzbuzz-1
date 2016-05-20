@@ -1,0 +1,13 @@
+!!!
+%html
+	%head
+		%link{:href => "./styles.css", :rel => "stylesheet", :type => "text/css"}/
+		%title Fizzy Buzzy
+	%body
+		%h1 Fizzy Buzzy
+		%p Enter a number to count up to and see which number fizz and which buzz.
+		
+		%form{ :action => "/fizzbuzz", :method => "post"}
+			%label{:for => "number"} Number:
+			%input{:type => "number", :required => "", :name => "number", :max => "100", :min => "1"}
+			%input{:type => "submit", :value => "Set", :class => "button"}

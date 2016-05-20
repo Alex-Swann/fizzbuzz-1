@@ -10,6 +10,7 @@ require File.dirname(__FILE__)+'/lib/fizzbuzz'
 
 get '/' do
   erb :home # tells Sinatra to render views/home_page.erb
+  haml :index
 end
 
 # PARAMS:
@@ -26,4 +27,9 @@ post '/result' do
   @result = FizzBuzzApp.fizzbuzz @fizzbuzz
 	@giphy = FizzBuzzApp.giphy @result
   erb :result
+  haml :fizzbuzz, :locals => {:fzbz => array}
+end
+
+get '/style.css' do
+  sass :styles, :style => :expanded
 end

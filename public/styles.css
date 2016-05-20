@@ -1,0 +1,29 @@
+
+body { 
+  text-align:center;
+  font-family: "League-Gothic", Courier;
+  font-size:22px;
+  color:#7C9562;
+  margin:20px;
+  background: #eee;
+}
+
+h1 {
+    /*text-align: center;*/
+    font-size: 100px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 0 #ffd217, 10px 10px 0 #5ac7ff, 15px 15px 0 #ffd217, 20px 20px 0 #5ac7ff;
+}
+span {
+	display: block;
+}
+
+
+.fizz {
+	color: #ffd217
+}
+.buzz {
+	color: #5ac7ff
+}
+
+
